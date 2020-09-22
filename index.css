@@ -1,3 +1,11 @@
 body {
+    margin: 0;
+}
+
+nav {
+    background-color: red;
+}
+
+#welcome-section {
     background-color: aqua;
 }
