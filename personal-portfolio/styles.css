@@ -1,0 +1,122 @@
+body {
+    background-color: #13243e;
+    margin: 20px;
+    font-family: sans-serif;
+  }
+  
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  .header-pic {
+    height: 95px;
+  }
+  
+  .profile-pic {
+    height: 195px;
+  }
+  
+  #info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #name-date {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #name-date h2 {
+    color: #cdeffe;
+    margin: 0px;
+    font-size: 1.5em;
+  }
+  
+  #tech {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .bio {
+    width: 100%;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #choose-list {
+    background-color: #545353;
+    padding: 12px;
+  }
+  
+  .excited {
+    background-color: #545353;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .excited p {
+    color: #ccc;
+  }
+  
+  h1,
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #cdeffe;
+    margin: 0;
+  }
+  
+  h4 {
+    color: #cdeffe;
+    margin: 5px 0 15px 0;
+    font-size: 1.1em;
+  }
+  
+  ul {
+    color: #ccc;
+    font-size: 0.9em;
+    margin: 0;
+    padding-left: 15px;
+  }
+  
+  time {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  
+  figure > img {
+    max-height: 160px;
+    max-width: 180px;
+  }
+  
+  figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 205px;
+  }
+  
+  figcaption {
+    color: #fff;
+    max-width: 160px;
+    text-align: center;
+    background: rgba(10, 10, 10, 0.5);
+    position: relative;
+    top: -20px;
+  }
+  
+  footer {
+    color: #fff;
+    text-align: center;
+  }
+  
