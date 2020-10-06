@@ -79,6 +79,15 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   h2 {
@@ -88,6 +97,10 @@ body {
   a {
       text-decoration: none;
       color: #f0f0f0;
+  }
+
+  p {
+    font-size: 2rem;
   }
 
  .contact-section {
