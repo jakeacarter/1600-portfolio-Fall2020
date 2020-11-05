@@ -2,6 +2,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container {
+    display: flex;
+}
+
+.main {
+    margin: 8rem 5rem 0 10rem;
+}
 
 header, footer {
     display: flex;
