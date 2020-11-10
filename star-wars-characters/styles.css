@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+.body {
+    background-color: black;
+}
+
 .mainHeader {
     display: flex;
     justify-content: space-around;
@@ -13,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: black;
 }
 
 figure {
@@ -21,4 +26,23 @@ figure {
 
 figure img {
     max-height: 12rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
 }
