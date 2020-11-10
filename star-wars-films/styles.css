@@ -6,11 +6,19 @@
 body {
     background-color: black;
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    background-image: url(../Images/TheStars.jpg);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../Images/TheStars.jpg);
 }
 
 figure {
@@ -18,18 +26,20 @@ figure {
 }
 
 figcaption {
-    background-color: lightgrey;
+    color: white;
+    background-color: black;
     text-align: center;
 }
 
 .main_title {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #101010;
+    font-size: 70px;
 }
 
 h1 {
-    color: white;
+    color: yellow;
 }
 
 p {
@@ -37,4 +47,6 @@ p {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    background-color: #101010;
+    background-image: url(../Images/TheStars.jpg);
 }

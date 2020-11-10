@@ -32,7 +32,7 @@ body {
 }
 
 .nav-list a:hover {
-    background: rgb(113, 113, 148);
+    background: black;
 }
 
 .nav-list {
@@ -102,12 +102,17 @@ body {
     flex-wrap: wrap;
   }
 
+  .project-image {
+    border-radius: 20px;
+  }
+
   .project-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: teal;
     opacity: .75;
+    border-radius: 25px;
   }
 
   h2 {

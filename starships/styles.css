@@ -6,6 +6,10 @@
     display: flex;
 }
 
+body {
+    background-color: black;
+}
+
 .main {
     margin: 8rem 5rem 0 10rem;
 }
@@ -24,3 +28,22 @@ a {
 li {
     list-style-type: none;
 }
+
+h1 {
+    color: yellow;
+    font-size: 80px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    font-size: 40px;
+}
+
+body {
+    background-image: url(../Images/TheStars.jpg)
+}
+
