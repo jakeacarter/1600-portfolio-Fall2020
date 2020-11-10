@@ -59,16 +59,33 @@ body {
     font-size: x-large;
 }
 
+.container {
+  background-color: #111111;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 8vw;
+  text-shadow: 4px 4px 0px teal;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+}
+
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #45567d;
+    background: lightgray;
 }
 
 .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid white;
+    border-bottom: 0.2rem solid teal;
   }
 
 .projects-grid {
@@ -89,11 +106,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: teal;
+    opacity: .75;
   }
 
   h2 {
       font-size: 4.2rem;
+      color: black;
   }  
+
+  h3 {
+    font-size: 6.2rem;
+  }
 
   a {
       text-decoration: none;
@@ -102,6 +126,7 @@ body {
 
   p {
     font-size: 2rem;
+    color: white;
   }
 
  .contact-section {
@@ -113,11 +138,15 @@ body {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: #303841;
+    background: black;
   }
 
   .contact-section-header > h2 {
     font-size: 6rem;
+  }
+
+  .contact {
+    color: white;
   }
 
   .contact-links {
@@ -137,6 +166,12 @@ body {
 
   .contact-details:hover {
     transform: translateY(8px);
+  }
+
+  .footer {
+    background: black;
+    display: flex;
+    justify-content: center;
   }
 
   .btn {
