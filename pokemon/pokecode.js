@@ -15,7 +15,6 @@ function loadPage() {
         (async (data) => {
            for ( const pokemon of data.results ) {
                 await getAPIData(pokemon.url).then((pokeData) => {
-                    console.log(pokeData)
                 populatePokeCard(pokeData)
             }) 
         }
@@ -29,6 +28,9 @@ function populatePokeCard(pokemon) {
     pokeScene.className = 'scene'
     let pokeCard = document.createElement('div')
     pokeCard.className = 'card'
+    pokeCard.addEventListener('click', () => {
+        console.log(`You clicked on ${pokemon.name}`)
+    })
     let cardFront = document.createElement('div')
     let frontLabel = document.createElement('p')
     let frontImage = document.createElement('img')
@@ -46,6 +48,14 @@ function populatePokeCard(pokemon) {
     pokeCard.appendChild(cardBack)
     pokeScene.appendChild(pokeCard)
     pokemonGrid.appendChild(pokeScene)
+}
+
+function populateCardFront(pokemon) {
+
+}
+
+function populateCardBAck(pokemon) {
+
 }
 
 function getImageFileName(pokemon) {
