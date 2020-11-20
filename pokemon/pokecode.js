@@ -22,6 +22,29 @@ function loadPage() {
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
+//const loadButton = document.querySelector('button')
+
+//loadButton.addEventListener('click', () => {
+   // loadPage()
+    //loadButton.hidden = true
+//})
+
+// mudsdaleButton.addEventListener('click', () => {
+  //  getAPIData(`https://pokeapi.co/api/v2/pokemon/750`).then
+    //    (async (data) => {
+        //let mudMoves = document.creatElement('ul')
+        //data.moves.forEach(move => {
+           // console.log(move.move.name)
+           // let moveItem = document.createElement('li')
+           // moveItem.textContent = move.move.name
+           // mudMoves.appendChild(moveItem)
+       // })
+      //  let mudImage = document.createElement('img')
+        //mudImage.src = `../images/pokemon/750.png`
+        // pokemonGrid.appendChild(mudMoves)
+        //pokemonGrid.appendChild(mudImage)
+    //})
+//})
 
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
@@ -29,33 +52,34 @@ function populatePokeCard(pokemon) {
     let pokeCard = document.createElement('div')
     pokeCard.className = 'card'
     pokeCard.addEventListener('click', () => {
-        console.log(`You clicked on ${pokemon.name}`)
+        pokeCard.classList.toggle('is-flipped');
     })
-    let cardFront = document.createElement('div')
-    let frontLabel = document.createElement('p')
-    let frontImage = document.createElement('img')
-    let cardBack = document.createElement('div')
-    let backLabel = document.createElement('p')
-
-
-    frontLabel.textContent = pokemon.name
-    frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
-    backLabel.textContent = `I'm the back of the card`
-    cardFront.appendChild(frontImage)
-    cardFront.appendChild(frontLabel)
-    cardBack.appendChild(backLabel)
-    pokeCard.appendChild(cardFront)
-    pokeCard.appendChild(cardBack)
+    
+    pokeCard.appendChild(populateCardFront(pokemon))
+    pokeCard.appendChild(populateCardBack(pokemon))
     pokeScene.appendChild(pokeCard)
     pokemonGrid.appendChild(pokeScene)
 }
 
 function populateCardFront(pokemon) {
-
+    let cardFront = document.createElement('div')
+    cardFront.className = `card__face card__face--front`
+    let frontLabel = document.createElement('p')
+    let frontImage = document.createElement('img')
+    frontLabel.textContent = pokemon.name
+    frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
+    cardFront.appendChild(frontImage)
+    cardFront.appendChild(frontLabel)
+    return cardFront
 }
 
-function populateCardBAck(pokemon) {
-
+function populateCardBack(pokemon) {
+    let cardBack = document.createElement('div')
+    cardBack.className = `card__face card__face--back`
+    let backLabel = document.createElement('p')
+    backLabel.textContent = `I'm the back of the card`
+    cardBack.appendChild(backLabel)
+    return cardBack
 }
 
 function getImageFileName(pokemon) {
@@ -65,5 +89,17 @@ function getImageFileName(pokemon) {
         return `0${pokemon.id}`
     }
 }
+
+function Pokemon(name, height, weight, abilities) {
+    this.name = name
+    this.height = height
+    this.weight = weight
+    this.abilities = abilities
+    this.id = 900
+
+}
+
+let jakemon = new Pokemon('Jakemon', 450, 200, ['gorge', 'stuff', 'sleep'])
+console.log(jakemon)
 
 loadPage()
