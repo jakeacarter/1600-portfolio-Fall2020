@@ -22,6 +22,7 @@ function loadPage() {
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
+
 //const loadButton = document.querySelector('button')
 
 //loadButton.addEventListener('click', () => {
@@ -101,5 +102,6 @@ function Pokemon(name, height, weight, abilities) {
 
 let jakemon = new Pokemon('Jakemon', 450, 200, ['gorge', 'stuff', 'sleep'])
 console.log(jakemon)
+
 
 loadPage()
