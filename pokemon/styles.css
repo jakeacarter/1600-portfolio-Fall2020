@@ -13,13 +13,14 @@ header {
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: yellow;
   display: flex;
   justify-content: center;
   font-weight: bold;
   font-size: 70px;
   text-transform: uppercase;
+  margin: 0px 0px 25px 0px;
 }
 
 .pokemonGrid {
@@ -40,7 +41,7 @@ h1 {
     width: 100%;
     height: 100%;
     transition: transform 1s;
-  transform-style: preserve-3d;
+    transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
   }
@@ -50,10 +51,11 @@ h1 {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    line-height: 260px;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
   .card__face--front {
@@ -63,6 +65,7 @@ h1 {
   .card__face--back {
     background: gray;
     transform: rotateY(180deg);
+    line-height: 260px;
   }
 
   .card.is-flipped {
