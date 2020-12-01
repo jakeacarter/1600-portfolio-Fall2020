@@ -11,7 +11,7 @@ async function getAPIData(url) {
 
 // now, use the async getAPIData function
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon/?offset=1&limit=30`).then
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=31`).then
         (async (data) => {
            for ( const pokemon of data.results ) {
                 await getAPIData(pokemon.url).then((pokeData) => {
@@ -27,7 +27,7 @@ const pokemonGrid = document.querySelector('.pokemonGrid')
 
 //loadButton.addEventListener('click', () => {
    // loadPage()
-    //loadButton.hidden = true
+    //loadButton.disabled = true
 //})
 
 // mudsdaleButton.addEventListener('click', () => {
@@ -77,10 +77,36 @@ function populateCardFront(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card__face card__face--back`
-    let backLabel = document.createElement('p')
-    backLabel.textContent = `I'm the back of the card`
+    let backLabel = document.createElement('h3')
+    backLabel.textContent = `Abilities:`
+    let abilityList = document.createElement('ul')
+    pokemon.abilities.forEach(ability => {
+        let abilityName = document.createElement('li')
+        abilityName.textContent = ability.ability.name
+        abilityList.appendChild(abilityName)
+    })
+    let movesLabel = document.createElement('h3')
+    movesLabel.textContent = 'Most Accurate Move:'
+    let moveAccuracy = document.createElement('h4')
+    const mostAccurateMove = getBestAccuracyAndPower(pokemon.moves)
+    //console.group(mostAccurateMove.move)
+    //moveAccuracy.textContent = `${mostAccurateMove.move.name}`
     cardBack.appendChild(backLabel)
+    cardBack.appendChild(abilityList)
+    cardBack.appendChild(movesLabel)
+    cardBack.appendChild(moveAccuracy)
     return cardBack
+}
+
+function getBestAccuracyAndPower(pokemoves) {
+    return pokemoves.reduce((mostAccurate, move) => {
+        //console.log(move.move.url)
+        getAPIData(move.move.url).then
+            (async (data) => {
+                console.log(data.accuracy, data.power)
+            })
+  //      return mostAccurate.accuracy > move.accuracy ? mostAccurate : move
+      }, {});
 }
 
 function getImageFileName(pokemon) {

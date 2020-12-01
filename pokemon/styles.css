@@ -64,8 +64,8 @@ h1 {
   
   .card__face--back {
     background: gray;
+    color: #ddd;
     transform: rotateY(180deg);
-    line-height: 260px;
   }
 
   .card.is-flipped {
