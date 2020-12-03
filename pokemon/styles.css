@@ -32,7 +32,6 @@ h1 {
 .scene {
     width: 200px;
     height: 290px;
-    border: 1px solid #CCC;
     margin: 20px;
     perspective: 600px;
   }
@@ -60,15 +59,18 @@ h1 {
 
   .card__face--front {
     background: lightblue;
+    border-radius: 25px;
   }
   
   .card__face--back {
     background: gray;
     color: #ddd;
     transform: rotateY(180deg);
+    border-radius: 25px;
   }
 
   .card.is-flipped {
     transform: rotateY(180deg);
   }
+
   
