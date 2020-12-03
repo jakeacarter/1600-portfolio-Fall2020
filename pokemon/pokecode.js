@@ -86,11 +86,11 @@ function populateCardBack(pokemon) {
         abilityList.appendChild(abilityName)
     })
     let movesLabel = document.createElement('h3')
-    movesLabel.textContent = 'Most Accurate Move:'
+    movesLabel.textContent = 'Stats:'
     let moveAccuracy = document.createElement('h4')
-    const mostAccurateMove = getBestAccuracyAndPower(pokemon.moves)
-    //console.group(mostAccurateMove.move)
-    //moveAccuracy.textContent = `${mostAccurateMove.move.name}`
+    //const mostAccurateMove = getBestAccuracyAndPower(pokemon.move)
+    //console.group(mostAccurateMove.moves)
+    //moveAccuracy.textContent = `${mostAccurateMove.moves.name}`
     cardBack.appendChild(backLabel)
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
