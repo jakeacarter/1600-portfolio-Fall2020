@@ -22,12 +22,18 @@ function loadPage() {
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
+const newButton = document.querySelector('#newPokemon')
+
+newButton.addEventListener('click', () => {
+    let pokeName = prompt("What's your Pokemon's name?");
+    populatePokeCard(createNewPokemon(pokeName))
+})
 
 //const loadButton = document.querySelector('button')
 
 //loadButton.addEventListener('click', () => {
-   // loadPage()
-    //loadButton.disabled = true
+    loadPage()
+    loadButton.disabled = true
 //})
 
 // mudsdaleButton.addEventListener('click', () => {
@@ -88,6 +94,8 @@ function populateCardBack(pokemon) {
     let movesLabel = document.createElement('h3')
     movesLabel.textContent = 'Stats:'
     let moveAccuracy = document.createElement('h4')
+    let pokeWeight = document.createElement('h5')
+    pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
     //const mostAccurateMove = getBestAccuracyAndPower(pokemon.move)
     //console.group(mostAccurateMove.moves)
     //moveAccuracy.textContent = `${mostAccurateMove.moves.name}`
@@ -95,6 +103,7 @@ function populateCardBack(pokemon) {
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
+    cardBack.appendChild(pokeWeight)
     return cardBack
 }
 
@@ -117,17 +126,20 @@ function getImageFileName(pokemon) {
     }
 }
 
-function Pokemon(name, height, weight, abilities) {
+function Pokemon(name, height, weight, abilities, moves) {
     this.name = name
     this.height = height
     this.weight = weight
     this.abilities = abilities
     this.id = 900
+    this.moves = moves
 
 }
 
-let jakemon = new Pokemon('Jakemon', 450, 200, ['gorge', 'stuff', 'sleep'])
-console.log(jakemon)
+function createNewPokemon(name) {
+    return new Pokemon(name, 450, 200, ['gorge', 'stuff', 'sleep'] ['thunder', 'slap'])
+}
+
 
 
 loadPage()
