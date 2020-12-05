@@ -32,8 +32,8 @@ newButton.addEventListener('click', () => {
 //const loadButton = document.querySelector('button')
 
 //loadButton.addEventListener('click', () => {
-    loadPage()
-    loadButton.disabled = true
+    //loadPage()
+    //loadButton.disabled = true
 //})
 
 // mudsdaleButton.addEventListener('click', () => {
@@ -96,6 +96,8 @@ function populateCardBack(pokemon) {
     let moveAccuracy = document.createElement('h4')
     let pokeWeight = document.createElement('h5')
     pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
+    let pokeType = document.createElement('h3')
+    pokeType.textContent = `Types: ${pokemon.types.name}`
     //const mostAccurateMove = getBestAccuracyAndPower(pokemon.move)
     //console.group(mostAccurateMove.moves)
     //moveAccuracy.textContent = `${mostAccurateMove.moves.name}`
@@ -104,6 +106,7 @@ function populateCardBack(pokemon) {
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
     cardBack.appendChild(pokeWeight)
+    cardBack.appendChild(pokeType)
     return cardBack
 }
 
