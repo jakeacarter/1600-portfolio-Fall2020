@@ -75,6 +75,8 @@ function populateCardFront(pokemon) {
     let frontImage = document.createElement('img')
     frontLabel.textContent = pokemon.name
     frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
+    frontImage.className = `Images`
+    frontLabel.className = `pokeName`
     cardFront.appendChild(frontImage)
     cardFront.appendChild(frontLabel)
     return cardFront
@@ -97,7 +99,7 @@ function populateCardBack(pokemon) {
     let pokeWeight = document.createElement('h5')
     pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
     let pokeType = document.createElement('h3')
-    pokeType.textContent = `Types: ${pokemon.types.name}`
+    pokeType.textContent = `Types: ${pokemon.types.type}`
     //const mostAccurateMove = getBestAccuracyAndPower(pokemon.move)
     //console.group(mostAccurateMove.moves)
     //moveAccuracy.textContent = `${mostAccurateMove.moves.name}`

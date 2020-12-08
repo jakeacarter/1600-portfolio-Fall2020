@@ -52,16 +52,27 @@ button {
     position: relative;
   }
 
+  .pokeName {
+    position: relative;
+    bottom: -45px;
+    backface-visibility: hidden;
+  }
+
+  .Images {
+    position: relative;
+    top: 20px;
+  }
+
   .card__face {
     position: absolute;
-    width: 100%;
+    width: 105%;
     height: 100%;
     backface-visibility: hidden;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
   }
 
   .card__face--front {
