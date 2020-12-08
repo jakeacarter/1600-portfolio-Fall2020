@@ -99,7 +99,15 @@ function populateCardBack(pokemon) {
     let pokeWeight = document.createElement('h5')
     pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
     let pokeType = document.createElement('h3')
-    pokeType.textContent = `Types: ${pokemon.types.type}`
+    pokeType.textContent = `Type:`
+    let pokeTypes = document.createElement('ul')
+    pokemon.types.forEach(types => {
+        let typesName = document.createElement('li')
+        typesName.textContent = types.type.name
+        pokeTypes.appendChild(typesName) 
+    })
+    
+    
     //const mostAccurateMove = getBestAccuracyAndPower(pokemon.move)
     //console.group(mostAccurateMove.moves)
     //moveAccuracy.textContent = `${mostAccurateMove.moves.name}`
@@ -138,6 +146,7 @@ function Pokemon(name, height, weight, abilities, moves) {
     this.abilities = abilities
     this.id = 900
     this.moves = moves
+    this.types = type
 
 }
 
