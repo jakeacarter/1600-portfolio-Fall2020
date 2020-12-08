@@ -146,8 +146,7 @@ function Pokemon(name, height, weight, abilities, moves) {
     this.abilities = abilities
     this.id = 900
     this.moves = moves
-    this.types = type
-
+    
 }
 
 function createNewPokemon(name) {
