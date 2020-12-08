@@ -54,13 +54,13 @@ button {
 
   .pokeName {
     position: relative;
-    bottom: -45px;
+    bottom: 175px;
     backface-visibility: hidden;
   }
 
   .Images {
     position: relative;
-    top: 20px;
+    top: 70px;
   }
 
   .card__face {
