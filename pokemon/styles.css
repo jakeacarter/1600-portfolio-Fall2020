@@ -128,7 +128,6 @@ button {
     background-image: url(/Images/PokeField.jpg);
     /*background: #3279B9;*/
     border-radius: 25px;
-    box-shadow: 2px 2px 8px white;
   }
   
   .card__face--back {
