@@ -105,6 +105,7 @@ function populateCardBack(pokemon) {
         let typesName = document.createElement('li')
         typesName.textContent = types.type.name
         pokeTypes.appendChild(typesName) 
+        console.log(typesName)
     })
     
     

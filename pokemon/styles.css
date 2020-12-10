@@ -25,6 +25,32 @@ h1 {
   margin: 0px 0px 25px 0px; 
 }
 
+h3 {
+  position: relative;
+  top: 25px;
+}
+
+h5 {
+  position: relative;
+  top: 25px;
+}
+
+ul {
+  list-style-type: none;
+  float:left; 
+  display: block; 
+  text-align: center;
+  position: relative;
+  top: 30px;
+  width:160px; 
+  height: 80px;
+}
+
+li {
+  position: relative;
+  left: 5px;
+}
+
 #newPokemon {
   padding: 4px;
   text-transform: uppercase;
@@ -76,6 +102,7 @@ button {
 
   .card__face {
     position: absolute;
+    line-height: 30px;
     width: 105%;
     height: 100%;
     backface-visibility: hidden;
@@ -92,8 +119,8 @@ button {
   }
   
   .card__face--back {
-    background: gray;
-    color: #ddd;
+    background: yellow;
+    color: black;
     transform: rotateY(180deg);
     border-radius: 25px;
   }
