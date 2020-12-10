@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(/Images/PokemonField.jpg);
+  /*background-image: url(/Images/PokemonField.jpg);*/
   background-color: black;
 }
 
@@ -15,7 +15,7 @@ header {
 
 h1 {
   position: relative;
-  bottom: 35px;
+  bottom: 30px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: yellow;
   display: flex;
@@ -39,6 +39,10 @@ h3 {
 h5 {
   position: relative;
   top: 40px;
+}
+
+p {
+  font-size: 25px;
 }
 
 ul {
@@ -67,7 +71,7 @@ li {
 button {
   color: yellow;
   background-color: black;
-  border-color: blue;
+  border-color: #2E5EA2;
   font: bold;
   position: relative;
   bottom: 20px;
@@ -121,8 +125,8 @@ button {
   }
 
   .card__face--front {
-    background-image: url("PokeField.jpg");
-    background: #3279B9;
+    background-image: url(/Images/PokeField.jpg);
+    /*background: #3279B9;*/
     border-radius: 25px;
   }
   
