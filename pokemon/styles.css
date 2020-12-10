@@ -15,13 +15,13 @@ header {
 
 h1 {
   position: relative;
-  bottom: 30px;
+  bottom: 35px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: yellow;
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
   text-transform: uppercase;
   margin: 0px 0px 25px 0px; 
 }
@@ -121,13 +121,14 @@ button {
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
   .card__face--front {
     background-image: url(/Images/PokeField.jpg);
     /*background: #3279B9;*/
     border-radius: 25px;
+    box-shadow: 2px 2px 8px white;
   }
   
   .card__face--back {
@@ -135,6 +136,8 @@ button {
     color: black;
     transform: rotateY(180deg);
     border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px white;
   }
 
   .card.is-flipped {
