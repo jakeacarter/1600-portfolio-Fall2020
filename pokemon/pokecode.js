@@ -85,7 +85,7 @@ function populateCardFront(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card__face card__face--back`
-    let backLabel = document.createElement('h3')
+    let backLabel = document.createElement('h2')
     backLabel.textContent = `Abilities:`
     let abilityList = document.createElement('ul')
     pokemon.abilities.forEach(ability => {
