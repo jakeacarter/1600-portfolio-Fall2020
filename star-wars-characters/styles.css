@@ -18,6 +18,27 @@ header {
     font-size: 40px;
 }
 
+button {
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+    border-width: thin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+    bottom: 25px;
+
+}
+
+button:hover {
+  background: yellow;
+  color: black;
+  border-color: black;
+  cursor: pointer;
+}
+
 #main {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +62,12 @@ header {
 
 h1 {
     color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    position: relative;
+    top: 20px;
+    bottom: 20px;
 }
 
 p {
@@ -48,7 +75,7 @@ p {
 }
 
 footer {
-    color: white;
+    color: yellow;
     display: flex;
     justify-content: center;
 }
