@@ -78,11 +78,19 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background: yellow;
+  color: black;
+  border-color: black;
+}
+
 .pokemonGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
 
 .scene {
     width: 200px;
@@ -124,6 +132,13 @@ button {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
+  .card__face:hover {
+    -webkit-transform: rotateZ(-3deg);
+          -ms-transform: rotateZ(-3deg);
+          transform: rotateZ(-3deg);
+   /* box-shadow: 1px 1px 10px 0 white;*/
+  }
+
   .card__face--front {
     background-image: url(/Images/PokeField.jpg);
     /*background: #3279B9;*/
@@ -136,7 +151,6 @@ button {
     transform: rotateY(180deg);
     border-radius: 25px;
     border-radius: 25px;
-    box-shadow: 2px 2px 5px white;
   }
 
   .card.is-flipped {
