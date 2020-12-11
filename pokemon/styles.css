@@ -8,9 +8,17 @@ body {
   background-color: black;
 }
 
+.logo {
+  position: relative;
+  top: 10px;
+}
+
 header {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 5px;
+  bottom: 20px;
 }
 
 h1 {
@@ -42,6 +50,7 @@ h5 {
 }
 
 p {
+  color: white;
   font-size: 25px;
 }
 
@@ -68,8 +77,13 @@ li {
   margin: 5px;
 }
 
+img {
+  position: relative;
+  bottom: 20px;
+}
+
 button {
-  color: yellow;
+  color: #2562AB;
   background-color: black;
   border-color: #2E5EA2;
   font: bold;
@@ -79,7 +93,7 @@ button {
 }
 
 button:hover {
-  background: yellow;
+  background: #2562AB;
   color: black;
   border-color: black;
 }
@@ -130,24 +144,27 @@ button:hover {
     font-size: 20px;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-style: solid;
+    border-color: yellow;
+    border-width: thin;
   }
 
   .card__face:hover {
-    -webkit-transform: rotateZ(-3deg);
+    /*-webkit-transform: rotateZ(-3deg);
           -ms-transform: rotateZ(-3deg);
-          transform: rotateZ(-3deg);
-   /* box-shadow: 1px 1px 10px 0 white;*/
+          transform: rotateZ(-3deg);*/
+   box-shadow: 1px 1px 10px 0 white;
   }
 
   .card__face--front {
-    background-image: url(/Images/PokeField.jpg);
+    /*background-image: url(/Images/PokeField.jpg);*/
     /*background: #3279B9;*/
     border-radius: 25px;
   }
   
   .card__face--back {
-    background: yellow;
-    color: black;
+    background: black;
+    color: white;
     transform: rotateY(180deg);
     border-radius: 25px;
     border-radius: 25px;
