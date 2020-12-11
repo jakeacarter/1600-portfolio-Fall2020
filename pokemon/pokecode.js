@@ -117,7 +117,7 @@ function populateCardBack(pokemon) {
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
     cardBack.appendChild(pokeWeight)
-    cardBack.appendChild(pokeType)
+    cardBack.appendChild(pokeTypes)
     return cardBack
 }
 
