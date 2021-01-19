@@ -99,7 +99,7 @@ body {
 }
 
 .heading {
-  font-size: 8vw;
+  font-size: 7vw;
   text-shadow: 4px 4px 0px teal;
   mix-blend-mode: screen;
   animation: fadeIn 2.5s linear forwards;
